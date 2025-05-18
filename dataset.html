@@ -37,35 +37,35 @@
             <h3>DRL for Real Dataset</h3>
             
             <div class="dataset-description">
-                <p>To bridge the gap between theoretical research and practical applications in disentangled representation learning, we will introduce a series of novel, realistic datasets that reflect the complexity and diversity of the real world. These datasets will contain multiple modalities, multiple attributes, and complex interrelationships, providing more challenging benchmarks for research in disentangled representation learning.</p>
+                <p>The proposed dataset is specifically designed for disentangled representation learning (DRL), covering multiple realistic scenarios and diverse disentanglement factors. It consists of two main subsets:</p>
                 
-                <p>Our datasets will cover the following key areas:</p>
                 <ul>
-                    <li><strong>Multi-attribute Image Dataset</strong>: Contains images with multiple controllable attributes such as shape, color, texture, pose, etc., with complex interrelationships between these attributes.</li>
-                    <li><strong>Temporal Dataset</strong>: Contains data that changes over time, used to evaluate the ability of disentangled representation learning to capture temporal dynamics and causal relationships.</li>
-                    <li><strong>Cross-domain Dataset</strong>: Contains data from different domains, used to evaluate the ability of disentangled representation learning in cross-domain generalization.</li>
+                    <li><strong>General Image Subset</strong>: Contains approximately 25,000 images across several distinct categories, such as human faces, animals, plants, etc. Images in this subset are partially synthesized using text-to-image generative models, while others are derived from controllable generation video sources such as time-lapse photography. The final general image subset contains a balanced mixture of both real and generated images, providing a comprehensive and realistic benchmark for evaluating disentangled representation models.</li>
+                    <li><strong>Autonomous Driving Subset</strong>: Includes about 7,000 images systematically generated using the CARLA simulator, covering 12 distinct vehicle types and more than 5 background scenarios (e.g., rainy, foggy, sunny, and varying illumination conditions).</li>
                 </ul>
                 
-                <p>Participants can use our provided datasets, or other public or private datasets, as long as they provide detailed data descriptions when submitting. We encourage participants to explore the potential of disentangled representation learning in various practical application scenarios.</p>
+                <p>The dataset follows a hierarchical structure, organizing scenarios, object types, and disentanglement factors in a systematic way. This structure allows for comprehensive evaluation of disentangled representation learning methods across various controllable generation.</p>
             </div>
             
             <div class="dataset-download">
                 <h3>Dataset Download</h3>
-                <p>The datasets will be released in January 2025 when the challenge starts. Please visit the official website at that time to get the dataset download links.</p>
+                <p>The datasets will be released on April 10, 2025 when the competition is announced. Please visit the official website at that time to get the dataset download links.</p>
             </div>
             
-            <div class="dataset-examples">
-                <div class="dataset-example">
-                    <img src="https://via.placeholder.com/400x300?text=Multi-attribute+Image" alt="Multi-attribute Image">
-                    <p><strong>Multi-attribute Image Example</strong></p>
-                    <p>This dataset contains images with multiple controllable attributes such as shape, color, texture, pose, etc. The goal of disentangled representation learning is to learn to decouple these attributes into independent representations, allowing each attribute to be controlled individually without affecting others.</p>
+            <div class="dataset-structure">
+                <h3>Dataset Structure</h3>
+                <!-- 暂时隐藏数据集卡片 - Multi-attribute Image 和 Temporal Data 相关内容 -->
+                <!--
+                <div class="dataset-figure">
+                    <img src="images/dataset_structure.png" alt="Hierarchical structure of the dataset" onerror="this.src='https://via.placeholder.com/600x400?text=Dataset+Structure'">
+                    <p><strong>Figure 1:</strong> Hierarchical structure of the dataset, showing the organization of scenarios, object types, and disentanglement factors.</p>
                 </div>
                 
-                <div class="dataset-example">
-                    <img src="https://via.placeholder.com/400x300?text=Temporal+Data" alt="Temporal Data">
-                    <p><strong>Temporal Data Example</strong></p>
-                    <p>This dataset contains data that changes over time, used to evaluate the ability of disentangled representation learning to capture temporal dynamics and causal relationships. By learning disentangled representations along the temporal dimension, models can better understand and predict the behavior of complex systems.</p>
+                <div class="dataset-figure">
+                    <img src="images/dataset_examples.png" alt="Dataset examples" onerror="this.src='https://via.placeholder.com/600x400?text=Dataset+Examples'">
+                    <p><strong>Figure 2:</strong> The image presents a comprehensive visualization of our dataset structure. On the left side, an intuitive diagram illustrates the conceptual framework, while representative examples are shown on the right. In the general image examples, the first row demonstrates variations in the color of the rose—and the second row shows changes in the person's hair color. The third row illustrates relationship factors between objects. For the autonomous driving subset shown in the bottom row, we present images that vary according to illumination conditions.</p>
                 </div>
+                -->
             </div>
             
             <div class="dataset-license">
